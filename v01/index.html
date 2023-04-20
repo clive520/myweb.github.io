@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>校園尋寶@altohorn</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/themes/green.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="Stylesheet" type="text/css" href="css/main.css"></link>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="include/config.js"></script>
+		<script src="include/javascript.js"></script>
+		<script language="Javascript" type="text/javascript" src="include/jquery.lwtCountdown-1.0.js"></script> <!--倒數計時-->
+	</head>
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="a" data-position="fixed">
+				<h1>校園尋寶@Nantou altohorn</h1>
+			</div>
+			
+			<!--逃脫說明-->
+			<div data-role="content" data-theme="a" id="content01">
+				<h2><script language="javascript">document.write(maintitle);</script></h2>
+				<p>
+					<script language="javascript">document.write(intro);</script>
+				</p>
+				<img src="images/img00.png" width="90%" id="img00" onerror="imgDisplay00()">
+				<!-- countdown_dashboard -->
+	
+					<div id="countdown_dashboard">
+						<div class="dash hours_dash">
+							<span class="dash_title">時</span>
+							<div class="digit">0</div>
+							<div class="digit">0</div>
+						</div>
+
+						<div class="dash minutes_dash">
+							<span class="dash_title">分</span>
+							<div class="digit">0</div>
+							<div class="digit">0</div>
+						</div>
+
+						<div class="dash seconds_dash">
+							<span class="dash_title">秒</span>
+							<div class="digit">0</div>
+							<div class="digit">0</div>
+						</div>
+					</div>
+
+				<!-- END countdown_dashboard -->
+				
+			</div>
+			
+			<!--題目及作答區-->
+			<div data-role="content" data-theme="a" id="content02">
+				<div data-role="coolapsible-ser">
+					<div data-role="collapsible" id="coll01">
+						<h2 id="hq01"><img onload="resizeImage()" src="images/check.png" id="imgcheck01"><img src="images/nocheck.png" id="imgnocheck01">關卡一</h2>
+						<h3><script language="javascript">document.write(q01)</script></h3>
+						<p>
+							<img src="images/img01.png" width="90%" id="img01" onerror="imgDisplay01()">
+							<br>							
+							<audio src="audio/audio01.mp3" id="audio01" onerror="audioDisplay01()" controls>HTML5 audio not supported</audio>
+							<br>
+							提示：<script language="javascript">document.write(hint01)</script>							
+							<br>
+							<img src="images/hintimg01.png" width="90%" id="hintimg01" onerror="hintimgDisplay01()">						
+						</p>
+						<div data-role="fieldcontain">
+							<lable for="Ans01">答案：</lable>
+							<input type="text" id="ans01">
+							<input type="button" id="but01" value="確定">
+						</div>
+					</div>
+					<div data-role="collapsible" id="coll02">
+						<h2 id="hq02"><img src="images/check.png" id="imgcheck02"><img src="images/nocheck.png" id="imgnocheck02">關卡二</h2>
+						<h3><script language="javascript">document.write(q02)</script></h3>
+						<p>
+							<img src="images/img02.png" width="90%" id="img02" onerror="imgDisplay02()">
+							<br>							
+							<audio src="audio/audio02.mp3" id="audio02" onerror="audioDisplay02()" controls>HTML5 audio not supported</audio>
+							<br>
+							提示：<script language="javascript">document.write(hint02)</script>
+							<br>
+							<img src="images/hintimg02.png" width="90%" id="hintimg02" onerror="hintimgDisplay02()">	
+							</p>
+						<div data-role="fieldcontain">
+							<lable for="Ans02">答案：</lable>
+							<input type="text" id="ans02">
+							<input type="button" id="but02" value="確定">
+						</div>
+					</div>
+					<div data-role="collapsible" id="coll03">
+						<h2 id="hq03"><img src="images/check.png" id="imgcheck03"><img src="images/nocheck.png" id="imgnocheck03">關卡三</h2>
+						<h3><script language="javascript">document.write(q03)</script></h3>
+						<p>
+							<img src="images/img03.png" width="90%" id="img03" onerror="imgDisplay03()">
+							<br>
+							<audio src="audio/audio03.mp3" id="audio03" onerror="audioDisplay03()" controls>HTML5 audio not supported</audio>
+							<br>
+							提示：<script language="javascript">document.write(hint03)</script>
+							<br>
+							<img src="images/hintimg03.png" width="90%" id="hintimg03" onerror="hintimgDisplay03()">								
+							</p>
+						<div data-role="fieldcontain">
+							<lable for="Ans03">答案：</lable>
+							<input type="text" id="ans03">
+							<input type="button" id="but03" value="確定">
+						</div>
+					</div>
+					<div data-role="collapsible" id="coll04">
+						<h2 id="hq04"><img src="images/check.png" id="imgcheck04"><img src="images/nocheck.png" id="imgnocheck04">關卡四</h2>
+						<h3><script language="javascript">document.write(q04)</script></h3>
+						<p>
+							<img src="images/img04.png" width="90%" id="img04" onerror="imgDisplay04()">
+							<br>
+							<audio src="audio/audio04.mp3" id="audio04" onerror="audioDisplay04()" controls>HTML5 audio not supported</audio>			
+							<br>
+							提示：<script language="javascript">document.write(hint04)</script>
+							<br>
+							<img src="images/hintimg04.png" width="90%" id="hintimg04" onerror="hintimgDisplay04()">								
+							</p>
+						<div data-role="fieldcontain">
+							<lable for="Ans04">答案：</lable>
+							<input type="text" id="ans04">
+							<input type="button" id="but04" value="確定">
+						</div>
+					</div>
+				</div>
+
+				<script src="include/checkans.js"></script>
+				
+			</div>
+			<div data-role="footer" data-theme="a" data-position="fixed">
+
+				<a href="#story" data-rel="dialog" data-role="button" data-icon="arrow-r" id="check">答題完畢，離開這裡</a>
+				<script src="include/checkall.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
